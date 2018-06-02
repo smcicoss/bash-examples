@@ -22,11 +22,11 @@
 echo "Give me your name:"
 read name
 
-if grep -i --quiet $name masculinos.txt; then
+if grep -i --quiet "^$name$" masculinos.txt; then
   echo "You are a male"
 fi
 
-if grep -i --quiet $name femeninos.txt; then
+if grep -i --quiet "^$name$" femeninos.txt; then
   echo "You are a female"
 fi
 
