@@ -26,3 +26,5 @@ find . -type f -name "*.html" -print | parallel gzip
 
 # Copying files to temp directory
 ls | parallel cp {} /tmp/
+
+echo debian.org; echo gnu.org | parallel -k traceroute
