@@ -1,0 +1,3 @@
+s/?page=one&/pageone/g
+s/?page=two&/pagetwo/g
+s/?page=three&/pagethree/g
