@@ -42,3 +42,5 @@ sed "2,3s/test/another test/" test.txt
 # Remove tags from html file
 sed -e 's/<.*>//g' geeks.html
 
+# Replacing from a file
+sed -f replace.txt < a.txt
