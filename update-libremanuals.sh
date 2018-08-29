@@ -17,10 +17,10 @@
 
 # You should have received a copy of the GNU General Public License
 # along with GNU Emacs; see the file COPYING.  If not, write to
-# the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, 
+# the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
 # Boston, MA 02110-1301 USA,
 
-/usr/bin/python3 ~/git/python-examples/flask/libremanuals/libremanuals.py
+#/usr/bin/python3 ~/git/python-examples/flask/libremanuals/libremanuals.py &
 
 cd ~/git/libremanuals.github.io/download
 rm *
@@ -30,7 +30,18 @@ wget http://127.0.0.1:5000/org-mode.html
 wget http://127.0.0.1:5000/gcc.html
 wget http://127.0.0.1:5000/r.html
 wget http://127.0.0.1:5000/python.html
+wget http://127.0.0.1:5000/debian.html
 wget http://127.0.0.1:5000/acerca.html
+
+sed -i "s/\/static\///g" elisp-es.html
+sed -i "s/\/static\///g" org-mode.html
+sed -i "s/\/static\///g" gcc.html
+sed -i "s/\/static\///g" r.html
+# sed -i "s/static\/vendor\/bootstrap\///g" python.html
+sed -i "s/\/static\///g" python.html
+sed -i "s/\/static\///g" debian.html
+sed -i "s/\/static\///g" acerca.html
+
 cp * ..
 cd ..
-git status .
+# git status .
