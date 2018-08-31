@@ -32,6 +32,7 @@ wget http://127.0.0.1:5000/r.html
 wget http://127.0.0.1:5000/python.html
 wget http://127.0.0.1:5000/bash.html
 wget http://127.0.0.1:5000/debian.html
+wget http://127.0.0.1:5000/gimp.html
 wget http://127.0.0.1:5000/acerca.html
 
 sed -i "s/\/static\///g" index.html
@@ -43,6 +44,7 @@ sed -i "s/\/static\///g" r.html
 sed -i "s/\/static\///g" python.html
 sed -i "s/\/static\///g" bash.html
 sed -i "s/\/static\///g" debian.html
+sed -i "s/\/static\///g" gimp.html
 sed -i "s/\/static\///g" acerca.html
 
 cp * ..
