@@ -20,3 +20,9 @@
 
 value=`cat femeninos.txt`
 echo "$value"
+
+echo "Write the file: "
+read file
+value=`cat $file`
+echo "$value"
+
