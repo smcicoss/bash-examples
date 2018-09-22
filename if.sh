@@ -45,3 +45,11 @@ fi
 if [ -d "/tmp" ]; then
     echo "The temporal directory exists. You are using UNIX"
 fi
+
+if ! cmp lala.sh lala.sh~ >/dev/null 2>&1
+then
+    echo "The backup and the file are differents"
+else
+    echo "The backup and the file are equals"
+fi
+
