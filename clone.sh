@@ -6,7 +6,10 @@ tobeclonegithub="bash-examples bashrefes c-examples davidam davidam.github.io ha
 
 tobecloneorgmode="org-mode worg"
 
+tobeclonedrupal="orgmode drupal"
+
 gitdir="/home/davidam/git"
+
 cd $gitdir
 
 for i in $tobeclonegitlab; do
@@ -22,10 +25,30 @@ for i in $tobeclonegithub; do
 done
 
 for i in $tobecloneorgmode; do
-    if ! [ -d $i ]; then
+    if ! [ -d $i ]; then    
 	git clone https://code.orgmode.org/bzg/$i
     fi
 done
+
+
+# Drupal
+
+if ! [ -d drupal7 ]; then
+    mkdir drupal7
+fi
+
+cd drupal7
+git clone --branch 7.x-1.x https://git.drupal.org/project/orgmode.git
+git clone --branch 7.x-1.x https://git.drupal.org/project/ocrad.git
+cd ..
+
+if ! [ -d drupal8 ]; then
+    mkdir drupal8
+fi
+
+cd drupal8
+git clone --branch 8.x-1.x https://git.drupal.org/project/orgmode.git
+cd ..
 
 
 # for i in $tobeclonegithub; do
