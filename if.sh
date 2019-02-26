@@ -46,6 +46,12 @@ then
     echo The number is 100
 fi
 
+if [ $num -ne 100 ]
+then
+    echo The number is not 100
+fi
+
+
 if [ -d "/tmp" ]; then
     echo "The temporal directory exists. You are using UNIX"
 fi
