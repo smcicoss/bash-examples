@@ -38,8 +38,12 @@ if [ $num -gt 100 ]
 then
     echo Hey that\'s a large number.
 else
-    
     echo "It's a small number."
+fi
+
+if [ $num -eq 100 ]
+then
+    echo The number is 100
 fi
 
 if [ -d "/tmp" ]; then
