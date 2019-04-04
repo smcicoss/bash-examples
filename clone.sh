@@ -2,7 +2,7 @@
 
 tobeclonegitlab="guix-es"
 
-tobeclonegithub="bash-examples bashrefes c-examples davidam davidam.github.io haskell-examples java-examples js-examples gnuplot-examples marenostrum-examples php-mode ruby-examples sql-examples libremanuals.github.io orgguide-es GAPLEN python-examples damegender certificaciones"
+tobeclonegithub="bash-examples bashrefes c-examples davidam davidam.github.io haskell-examples java-examples js-examples gnuplot-examples marenostrum-examples php-mode ruby-examples sql-examples libremanuals.github.io orgguide-es GAPLEN python-examples damegender damenumpy dametowel damepandas damefunniest damcrawler certificaciones"
 
 tobecloneorgmode="org-mode worg"
 
