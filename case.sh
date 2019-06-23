@@ -1,4 +1,6 @@
-#!/bin/bash
+#! /bin/bash
+# -*- ENCODING: UTF-8 -*-
+# ·
 
 # Copyright (C) 2018  David Arroyo Menéndez
 
@@ -24,8 +26,14 @@ echo -n "Introduzca el nombre de un animal: "
 read ANIMAL
 echo -n "El $ANIMAL tiene "
 case $ANIMAL in
-caballo | perro | gato) echo -n "cuatro";;
-hombre | canguro ) echo -n "dos";;
-*) echo -n "un número desconocido de";;
+	caballo | perro | gato)
+		echo -n "cuatro"
+		;;
+	hombre | canguro ) 
+		echo -n "dos"
+		;;
+	*) 
+		echo -n "un número desconocido de"
+		;;
 esac
 echo " patas."
