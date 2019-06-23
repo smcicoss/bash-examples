@@ -1,4 +1,8 @@
-#!/bin/bash
+#! /bin/bash
+# -*- ENCODING: UTF-8 -*-
+# ·
+
+# Copyright (C) 2019  Simón Martínez Álvarez
 
 # Copyright (C) 2018  David Arroyo Menéndez
 
