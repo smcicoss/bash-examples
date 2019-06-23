@@ -2,7 +2,7 @@
 # -*- ENCODING: UTF-8 -*-
 # ·
 
-# éste script reemplaza acentos por acutes y otros caracteres especiales por su equivalente en XML/HTML usando sed
+# éste script reemplaza acutes pro acentos y otros caracteres especiales por su equivalente en XML/HTML usando sed
 #
 # GeoX & L�ndir
 #
