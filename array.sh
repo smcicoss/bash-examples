@@ -20,24 +20,33 @@
 # the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
 # Boston, MA 02110-1301 USA,
 
-array=(one two three four [5]=five)
+array=(one two three four [5]="five y un poco más")
+
+# presento la creación del array
+echo "array=(one two three four [5]=\"five y un poco más\")"
 
 echo "Array size: ${#array[*]}"
 
+# en esta forma presenta más elementos de los reales
 echo "Array items:"
-for item in ${array[*]}
-do
-    printf "   %s\n" $item
+for item in ${array[*]}; do
+    printf "\t%s\n" $item
+done
+
+#para tratar los items corectamente cuando estos incluyen espacios
+echo "Array items (con espacios)"
+for index in ${!array[*]}; do
+    printf "\t%s\n" "${array[$index]}"
 done
 
 echo "Array indexes:"
 for index in ${!array[*]}
 do
-    printf "   %d\n" $index
+    printf "\t%d\n" $index
 done
 
 echo "Array items and indexes:"
 for index in ${!array[*]}
 do
-    printf "%4d: %s\n" $index ${array[$index]}
+    printf "%4d: %s\n" $index "${array[$index]}"
 done
