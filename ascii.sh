@@ -1,4 +1,7 @@
-#!/bin/bash
+#! /bin/bash
+# -*- ENCODING: UTF-8 -*-
+# ·
+
 # Copyright (C) 2018  David Arroyo Menéndez
 
 # Author: David Arroyo Menéndez <davidam@gnu.org>
@@ -19,14 +22,14 @@
 # the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, 
 # Boston, MA 02110-1301 USA,
 
-veg1=carrots
-veg2=tomatoes
+veg1=tomates
+veg2=zanahorias
 
-if [[ "$veg1" < "$veg2" ]]
-then
-  echo "Although $veg1 precede $veg2 in the dictionary,"
-  echo -n "this does not necessarily imply anything "
-  echo "about my culinary preferences."
+if [[ "$veg1" < "$veg2" ]]; then
+  echo "Aunque $veg1 precede $veg2 en el diccionario,"
+  echo -n "esto no implica nada "
+  echo "sobre mis preferencias culinarias."
 else
-  echo "What kind of dictionary are you using, anyhow?"
+  echo "¿Qué tipo de diccionario estás usando?"
 fi
+

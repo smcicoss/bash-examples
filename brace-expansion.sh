@@ -1,4 +1,9 @@
-#!/bin/bash
+#! /bin/bash
+# -*- ENCODING: UTF-8 -*-
+# ·
+
+# Copyright (C) 2019  Simón Martínez Álvarez
+
 # Copyright (C) 2018  David Arroyo Menéndez
 
 # Author: David Arroyo Menéndez <davidam@gnu.org>
@@ -21,6 +26,6 @@
 
 echo a{d,c,b}e
 
-# You can use it in command such as:
+# Puedes usarlo en comandos como:
 # mkdir /usr/local/src/bash/{old,new,dist,bugs}
 # chown root /usr/{ucb/{ex,edit},lib/{ex?.?*,how_ex}}
